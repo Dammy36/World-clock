@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.min.js"></script>
     <title>World-clock</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -27,30 +28,32 @@
         <option value="">Australia</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="update-city">
         <div>
           <h2 class="city-content">Nigeria 🇳🇬</h2>
-          <div class="city-content date">April 26th 2023</div>
+          <div class="city-content date" id="nigeria-date">April 26th 2023</div>
         </div>
-        <div class="time">1:45:00 <small>PM</small></div>
+        <div class="time" id="nigeria-time">1:45:00 <small>PM</small></div>
       </div>
 
       <div class="city">
         <div>
-          <h2 class="city-content">Ghana 🇬🇭</h2>
-          <div class="city-content date">May 13th 2020</div>
+          <h2 class="city-content">Los Angeles 🇺🇸</h2>
+          <div class="city-content date" id="los-angeles-date">
+            May 13th 2020
+          </div>
         </div>
 
-        <div class="time">2:55:00 <small>PM</small></div>
+        <div class="time" id="los-angeles-time">2:55:00 <small>PM</small></div>
       </div>
 
       <div class="city">
         <div>
-          <h2 class="city-content">South Africa 🇿🇦</h2>
-          <div class="city-content date">May 13th 2020</div>
+          <h2 class="city-content">Turkey 🇹🇷</h2>
+          <div class="city-content date" id="turkey-date">May 13th 2020</div>
         </div>
 
-        <div class="time">2:55:00 <small>PM</small></div>
+        <div class="time" id="turkey-time">2:55:00 <small>PM</small></div>
       </div>
     </div>
 
