@@ -54,6 +54,7 @@ function updatedCity(event) {
             "h:m:ss"
           )}<small>${cityElement.format("A")}</small></div>
         </div>
+        <a href="/" class="all-cities">All cities</a>
  `;
 }
 
