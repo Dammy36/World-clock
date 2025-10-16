@@ -34,7 +34,10 @@ function upDated() {
 }
 
 function updatedCity(event) {
-  const cityEvent = event.target.value;
+  let cityEvent = event.target.value;
+  if (cityEvent === "Current") {
+    cityEvent = moment.tz.guess();
+  }
   const cityName = cityEvent.replace("_", " ").split("/")[1];
   const cityElement = moment.tz(cityEvent);
   const cityContainer = document.getElementById("cities");
