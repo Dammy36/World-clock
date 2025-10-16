@@ -20,40 +20,46 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select id="" class="selected-city">
+      <select id="city-input" class="selected-city">
         <option value="">Select a City</option>
-        <option value="">Nigeria</option>
-        <option value="">Ghana</option>
-        <option value="">France</option>
-        <option value="">Australia</option>
+        <option value="Africa/Lagos">Nigeria</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="Asia/Istanbul">Turkey</option>
+        <option value="Australia/Sydney">Australia</option>
       </select>
 
-      <div class="city" id="update-city">
-        <div>
-          <h2 class="city-content">Nigeria 🇳🇬</h2>
-          <div class="city-content date" id="nigeria-date">April 26th 2023</div>
+      <div id="cities">
+        <div class="city" id="nigeria-city">
+          <div>
+            <h2 class="city-content">Nigeria 🇳🇬</h2>
+            <div class="city-content date" id="nigeria-date">
+              April 26th 2023
+            </div>
+          </div>
+          <div class="time" id="nigeria-time">1:45:00 <small>PM</small></div>
         </div>
-        <div class="time" id="nigeria-time">1:45:00 <small>PM</small></div>
-      </div>
 
-      <div class="city">
-        <div>
-          <h2 class="city-content">Los Angeles 🇺🇸</h2>
-          <div class="city-content date" id="los-angeles-date">
-            May 13th 2020
+        <div class="city">
+          <div id="los-angeles-city">
+            <h2 class="city-content">Los Angeles 🇺🇸</h2>
+            <div class="city-content date" id="los-angeles-date">
+              May 13th 2020
+            </div>
+          </div>
+
+          <div class="time" id="los-angeles-time">
+            2:55:00 <small>PM</small>
           </div>
         </div>
 
-        <div class="time" id="los-angeles-time">2:55:00 <small>PM</small></div>
-      </div>
+        <div class="city">
+          <div id="turkey-city">
+            <h2 class="city-content">Turkey 🇹🇷</h2>
+            <div class="city-content date" id="turkey-date">May 13th 2020</div>
+          </div>
 
-      <div class="city">
-        <div>
-          <h2 class="city-content">Turkey 🇹🇷</h2>
-          <div class="city-content date" id="turkey-date">May 13th 2020</div>
+          <div class="time" id="turkey-time">2:55:00 <small>PM</small></div>
         </div>
-
-        <div class="time" id="turkey-time">2:55:00 <small>PM</small></div>
       </div>
     </div>
 
